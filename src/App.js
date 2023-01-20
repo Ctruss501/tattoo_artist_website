@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import React, { useState } from "react";
 import { About, Gallery, Contact } from "./container";
 import { Navbar } from "./components";
@@ -9,15 +9,11 @@ function App() {
 
   // Function to toggle theme.
   const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
-
+  //{`app app__theme-${theme}`}
   return (
-    <div className={`app app__theme-${theme}`}>
+    <div className="app" id={theme}>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <About />
       <Gallery />
