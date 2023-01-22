@@ -5,7 +5,7 @@ import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { motion } from "framer-motion";
 
 const Navbar = (props) => {
-  const [toggle, setToggle] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <nav className="app__navbar">
@@ -20,27 +20,32 @@ const Navbar = (props) => {
           </li>
         ))}
       </ul>
-      <div className="app__navbar-theme-btn">
-        <BsFillMoonStarsFill onClick={props.toggleTheme} />
-      </div>
+      <BsFillMoonStarsFill
+        className="app__navbar-theme-btn"
+        onClick={props.toggleTheme}
+      />
+
       <div className="app__navbar-menu">
-        <IoIosMenu onClick={() => setToggle(true)} />
-        {toggle && (
+        <IoIosMenu onClick={() => setToggleMenu(true)} />
+        {toggleMenu && (
           <motion.div
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <IoIosClose onClick={() => setToggle(false)} />
+            <IoIosClose onClick={() => setToggleMenu(false)} />
             <ul>
               {["home", "gallery", "contact"].map((item) => (
-                <li key={`link-${item}`}>
-                  <div />
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                <li key={item}>
+                  <a href={`#${item}`} onClick={() => setToggleMenu(false)}>
                     {item}
                   </a>
                 </li>
               ))}
             </ul>
+            <BsFillMoonStarsFill
+              className="app__navbar-menu-theme-btn"
+              onClick={props.toggleTheme}
+            />
           </motion.div>
         )}
       </div>

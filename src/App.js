@@ -1,6 +1,6 @@
 import "./App.scss";
 import React, { useState } from "react";
-import { About, Gallery, Contact } from "./container";
+import { Home, Gallery, Contact } from "./container";
 import { Navbar } from "./components";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="app" id={theme}>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
-      <About />
+      <Home />
       <Gallery />
       <Contact />
     </div>
