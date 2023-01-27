@@ -6,9 +6,9 @@
   background-repeat: repeat;
 
   // disable the default padding styles
-  .app__wrapper {
-    padding: 0;
-  }
+  //.app__wrapper {
+  //  padding: 0;
+  //}
 }
 
 .app__home {
@@ -18,9 +18,9 @@
   flex-direction: row;
 
   // disable the default padding styles
-  .app__wrapper {
-    padding: 0;
-  }
+  //.app__wrapper {
+  //  padding: 0;
+  //}
 
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
