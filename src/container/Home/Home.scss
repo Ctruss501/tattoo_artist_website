@@ -1,14 +1,9 @@
 #home {
   position: relative;
-  background: url("../../assets/artist.png");
+  background: url("../../assets/tattoo-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-
-  // disable the default padding styles
-  //.app__wrapper {
-  //  padding: 0;
-  //}
 }
 
 .app__home {
@@ -16,11 +11,6 @@
   width: 100%;
   min-height: 100vh;
   flex-direction: row;
-
-  // disable the default padding styles
-  //.app__wrapper {
-  //  padding: 0;
-  //}
 
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
@@ -35,11 +25,48 @@
   }
 }
 
-.app__home-info {
+#light .app__home-info {
+  width: 100%;
   flex: 0.85;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50%;
+
+  h2 {
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #353;
+    margin: 0 0 0 -5px;
+
+    @media screen and (max-width: 1200px) {
+      width: 60%;
+      font-size: 3rem;
+      margin: 0 0 0 5px;
+    }
+    @media screen and (min-width: 2000px) {
+      font-size: 5rem;
+    }
+  }
+
+  p {
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(210, 210, 210);
+
+    @media screen and (max-width: 1200px) {
+      width: 65%;
+      font-size: 1.1rem;
+      margin: 0 0 0 10px;
+    }
+    @media screen and (min-width: 2000px) {
+      width: 50%;
+      font-size: 2rem;
+    }
+  }
 
   @media screen and (max-width: 1200px) {
     flex: 0.5;
@@ -48,15 +75,66 @@
   }
 }
 
-.app__home-title {
+#dark .app__home-info {
+  width: 100%;
+  flex: 0.85;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50%;
+
+  h2 {
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--dark-text);
+    margin: 0 0 0 -5px;
+
+    @media screen and (max-width: 1200px) {
+      width: 60%;
+      font-size: 3rem;
+      margin: 0 0 0 5px;
+    }
+    @media screen and (min-width: 2000px) {
+      font-size: 5rem;
+    }
+  }
+
+  p {
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(210, 210, 210);
+
+    @media screen and (max-width: 1200px) {
+      width: 65%;
+      font-size: 1.1rem;
+      margin: 0 0 0 10px;
+    }
+    @media screen and (min-width: 2000px) {
+      width: 50%;
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex: 0.5;
+    width: 100%;
+    margin-right: 0rem;
+  }
+}
+
+/*.app__home-title {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-direction: column;
+  //flex-direction: column;
   font-size: 4rem;
   font-weight: 800;
-  color: rgb(0, 0, 0);
+  //color: rgb(173, 93, 78);
+  color: #3d836b;
 
   @media screen and (max-width: 1200px) {
     width: 60%;
@@ -68,10 +146,11 @@
   width: 50%;
   font-size: 2rem;
   font-weight: 400;
-  color: rgb(0, 0, 0);
+  //color: rgb(156, 56, 72);
+  color: #0572d1;
 
   @media screen and (max-width: 1200px) {
     width: 75%;
     font-size: 1.7rem;
   }
-}
+}*/

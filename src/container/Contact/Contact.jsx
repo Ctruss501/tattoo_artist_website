@@ -49,14 +49,17 @@ const Contact = () => {
         <div className="app__contact-cards">
           <div className="app__contact-card">
             <img src={images.email} alt="email" />
-            <a href="mailto: ctruss501@gmail.com" className="app__contact-text">
-              ctruss501@gmail.com
+            <a
+              href="mailto: ralphtattooing@gmail.com"
+              className="app__contact-text"
+            >
+              ralphtattooing@gmail.com
             </a>
           </div>
           <div className="app__contact-card">
             <img src={images.phone} alt="phone" />
-            <a href="tel: +1 (330) 921-1076" className="app__contact-text">
-              +1 (330) 921-1076
+            <a href="tel: +1 (330) 531-5157" className="app__contact-text">
+              +1 (330) 531-5157
             </a>
           </div>
         </div>

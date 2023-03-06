@@ -34,7 +34,7 @@
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #1010107a;
+    background-color: #00000067;
 
     transition: all 0.3s ease-in-out;
 
@@ -59,17 +59,32 @@
       width: 90%;
       justify-content: center;
     }
+
+    @media screen and (min-width: 2000px) {
+      margin: 4rem 0;
+      padding: 2rem;
+
+      img {
+        width: 50px;
+        height: 50px;
+        margin: 0 1rem 0 0;
+      }
+    }
   }
 
   @media screen and (max-width: 768px) {
     width: 100%;
+  }
+
+  @media screen and (min-width: 2000px) {
+    margin: 5rem 0 0 0;
   }
 }
 
 .app__contact-text {
   font-size: 0.98rem;
   text-align: left;
-  color: rgb(66, 127, 66);
+  color: var(--dark-text);
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {
@@ -83,7 +98,7 @@
   justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 0 0 8rem 0;
+  //margin: 0 0 8rem 0;
 
   div {
     width: 100%;
@@ -91,7 +106,7 @@
     margin: 1rem 0;
     border-radius: 10px;
     cursor: pointer;
-    background-color: lightgray;
+    background-color: rgb(0, 0, 0);
 
     transition: all 0.3s ease-in-out;
 
@@ -103,17 +118,35 @@
       border-radius: 7px;
 
       font: var(--font-base);
-      background-color: rgb(212, 212, 212);
+      background-color: rgb(131, 131, 131);
       color: #353;
+      font-weight: 700;
       outline: none;
+
+      &::placeholder {
+        color: rgba(51, 85, 51, 0.725);
+        font-weight: 400;
+      }
+
+      @media screen and (min-width: 2000px) {
+        font-size: 1.5rem;
+      }
     }
 
     textarea {
       height: 120px;
+
+      @media screen and (min-width: 2000px) {
+        height: 160px;
+      }
     }
 
     &:hover {
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.701);
+      box-shadow: 0 0 25px #000000cf;
+    }
+
+    @media screen and (min-width: 2000px) {
+      margin: 1.5rem 0;
     }
   }
 
@@ -121,11 +154,11 @@
     padding: 1rem 2rem;
     border-radius: 10px;
     border: none;
-    background-color: #1010107a;
+    background-color: #00000067;
 
     font: var(--font-base);
     font-weight: 500;
-    color: lightgrey;
+    color: rgb(169, 169, 169);
     outline: none;
     margin: 1.5rem 0 0 0;
 
@@ -134,13 +167,24 @@
 
     &:hover {
       background-color: rgb(42, 68, 42);
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.504);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.682);
+      color: rgb(184, 184, 184);
+    }
+
+    @media screen and (min-width: 2000px) {
+      margin: 3rem 0;
+      font-size: 1.5rem;
+      padding: 1.5rem 2.5rem;
     }
   }
 
   @media screen and (max-width: 768px) {
     width: 95%;
-    margin: 0 0 6rem 0;
+    //margin: 0 0 6rem 0;
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 75%;
   }
 }
 
@@ -149,7 +193,7 @@
   font-weight: 500;
   text-align: center;
   text-transform: capitalize;
-  margin: 10rem 0 0 0;
+  margin: 7rem 0 0 0;
 
   @media screen and (min-width: 2000px) {
     font-size: 4rem;
@@ -157,6 +201,6 @@
 
   @media screen and (max-width: 967px) {
     font-size: 1.7rem;
-    margin: 4rem 0 0 0;
+    margin: 3rem 0 0 0;
   }
 }

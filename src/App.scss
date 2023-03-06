@@ -1,15 +1,14 @@
 .app {
-  background-color: white;
+  //background-color: white;
   font-family: var(--font-base);
 }
 
 #light {
-  background-color: white;
+  background-color: rgb(153, 153, 153);
 }
 
 #dark {
-  background-color: rgb(60, 60, 60);
-  color: rgb(66, 127, 66);
+  background-color: rgb(28, 28, 28);
 }
 
 .app__flex {
@@ -29,15 +28,35 @@
   }
 }*/
 
-.header-text {
+#light .header-text {
   font-size: 2.75rem;
   font-weight: 800;
+  color: var(--light-text);
   text-align: center;
   text-transform: capitalize;
-  padding-top: 75px;
+  padding: 75px 0 0 0;
 
   @media screen and (min-width: 2000px) {
     font-size: 4rem;
+    padding: 125px 0 0 0;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
+#dark .header-text {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--dark-text);
+  text-align: center;
+  text-transform: capitalize;
+  padding: 75px 0 0 0;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+    padding: 125px 0 0 0;
   }
 
   @media screen and (max-width: 450px) {
