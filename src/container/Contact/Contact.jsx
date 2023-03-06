@@ -58,8 +58,8 @@ const Contact = () => {
           </div>
           <div className="app__contact-card">
             <img src={images.phone} alt="phone" />
-            <a href="tel: +1 (330) 531-5157" className="app__contact-text">
-              +1 (330) 531-5157
+            <a href="tel: +1 (555) 555-5555" className="app__contact-text">
+              +1 (555) 555-5555
             </a>
           </div>
         </div>
